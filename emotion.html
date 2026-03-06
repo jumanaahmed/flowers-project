@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="emo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <i class="fa-solid fa-sun-plant-wilt"></i>
+            <p>Bloom By Feeling</p>
+        </nav>
+        <section class="landing">
+            <button>choose by emotion</button>
+            <p>
+                what are you feeling?
+            </p>
+            <span class="basic-info">
+                select an emotion and we'll find the perfect flower to express it
+            </span>
+        </section>
+    </header>
+    <main>
+        <div class="main-cards">
+            <div class="card-1">
+                <i class="em em-two_hearts" aria-role="presentation" aria-label="TWO HEARTS"></i>
+                <p>Love</p>                   
+            </div>
+            <div class="card-2">
+                <i class="em em-pray" aria-role="presentation" aria-label="PERSON WITH FOLDED HANDS"></i>
+                <p>Gratitude</p>
+            </div>
+            <div class="card-3">
+                <i class="em em-white_frowning_face" aria-role="presentation" aria-label=""></i>
+                <p>Sadness</p>
+            </div>
+            <div class="card-4">
+                <i class="em em-hugging_face" aria-role="presentation" aria-label="HUGGING FACE"></i>
+                <p>Happiness</p> 
+            </div>
+            <div class="card-5">
+                <i class="em em-peace_symbol" aria-role="presentation" aria-label=""></i>
+                <p>Peace</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        const emotionLove = document.getElementsByClassName('card-1')[0];
+        emotionLove.addEventListener('click', () => {
+            window.location.href = 'emotion1.html';
+        });
+
+        const emotionGratitude = document.getElementsByClassName('card-2')[0];
+        emotionGratitude.addEventListener('click', () => {
+            window.location.href = 'emotion2.html';
+        });
+
+        const emotionSad = document.getElementsByClassName('card-3')[0];
+        emotionSad.addEventListener('click', () => {
+            window.location.href = 'emotion3.html';
+        });
+
+        const emotionHappiness = document.getElementsByClassName('card-4')[0];
+        emotionHappiness.addEventListener('click', () => {
+            window.location.href = 'emotion4.html';
+        });
+
+        const emotionPeace = document.getElementsByClassName('card-5')[0];
+        emotionPeace.addEventListener('click', () => {
+            window.location.href = 'emotion5.html';
+        });
+
+    </script>
+</body>
+</html>

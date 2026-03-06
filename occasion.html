@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="occ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <i class="fa-solid fa-sun-plant-wilt"></i>
+            <p>Bloom By Feeling</p>
+        </nav>
+        <section class="landing">
+            <button>choose by occasion</button>
+            <p>
+                what is the occasion?
+            </p>
+            <span class="basic-info">
+                select the moment you want to celebrate and find the perfect bloom
+            </span>
+        </section>
+    </header>
+    <main>
+        <div class="main-cards">
+            <div class="group1">
+                <div class="card-1">
+                    <i class="em em-birthday" aria-role="presentation" aria-label="BIRTHDAY CAKE"></i>
+                    <p>Birthday</p>    
+                    <span>
+                        celebrate their special day
+                    </span>    
+                </div>
+                <div class="card-2">
+                    <i class="em em-gift_heart" aria-role="presentation" aria-label="HEART WITH RIBBON"></i>
+                    <p>Anniversary</p>
+                    <span>
+                        honor your time together
+                    </span>
+                </div>
+                <div class="card-3">
+                    <i class="em em-mortar_board" aria-role="presentation" aria-label="GRADUATION CAP"></i>
+                    <p>Graduation</p>
+                    <span>congratulate their achievement</span>
+                </div>     
+            </div>
+            <div class="group2">
+                <div class="card-4">
+                    <i class="em em-blue_heart" aria-role="presentation" aria-label="BLUE HEART"></i>
+                    <p>Apology</p>       
+                    <span>Make amends with care</span>
+                </div>
+                <div class="card-5">
+                    <i class="em em-wilted_flower" aria-role="presentation" aria-label="WILTED FLOWER"></i>
+                    <p>Get Well</p>
+                    <span>
+                        send healing wishes
+                    </span>
+                </div>
+                <div class="card-6">
+                    <i class="em em-house_with_garden" aria-role="presentation" aria-label="HOUSE WITH GARDEN"></i>
+                    <p>New beginning</p>
+                    <span>
+                        welcome to their space
+                    </span>
+                </div>     
+            </div>
+    </main>
+    <p class="footer">
+        click on any occasion to discover the perfect flower
+    </p>
+
+    <script>
+        const occBirthday = document.getElementsByClassName('card-1')[0];
+        occBirthday.addEventListener('click', () => {
+            window.location.href = 'birthday.html';
+        });
+
+        const occAnn = document.getElementsByClassName('card-2')[0];
+        occAnn.addEventListener('click', () => {
+            window.location.href = 'ann.html';
+        });
+
+        const occNew = document.getElementsByClassName('card-6')[0];
+        occNew.addEventListener('click', () => {
+            window.location.href = 'newbegin.html';
+        });
+
+        const occGrad = document.getElementsByClassName('card-3')[0];
+        occGrad.addEventListener('click', () => {
+            window.location.href = 'grad.html';
+        });
+
+        const occApology = document.getElementsByClassName('card-4')[0];
+        occApology.addEventListener('click', () => {
+            window.location.href = 'apology.html';
+        });
+
+        const occWell = document.getElementsByClassName('card-5')[0];
+        occWell.addEventListener('click', () => {
+            window.location.href = 'well.html';
+        });
+    </script>
+
+
+
+
+</body>
+</html>
